@@ -1,0 +1,88 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to left, #7559c5, #330c8e);
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.heading {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    gap: 100px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.post-container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  word-wrap: break-word;
+}
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-story {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.post-media img,
+.post-media video {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+
+.link.active {
+  color: blue; 
+  font-weight: bold; 
+}

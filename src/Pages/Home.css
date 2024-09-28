@@ -1,0 +1,58 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.post-container {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.posts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+  word-break: break-all;
+}
+
+.post-story {
+  font-size: 16px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+
+.post-content {
+  width: 500px;
+  height: auto;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(153, 153, 234);
+  transition: background-color  0.5s ease;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  margin-left: 25px;
+}
+
+.delete-button:hover {
+  background-color: navy;
+  color: white;
+}
