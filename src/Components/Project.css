@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(to left, #7559c5, #330c8e);
+    background-image: linear-gradient(90deg, #FF9A9E, #FAD0C4);
     justify-content: space-between;
     position: relative;
     width: 100%;
@@ -34,16 +34,16 @@ h1 {
 
 .link {
     text-decoration: none;
-    color: white;
+    color: #333333;
     font-size: 1.5rem;
     padding: 10px;
     border-radius: 10px;
 }
 
 .link:hover {
-    background-color: aqua;
+    background-color: #FF6F61;
     cursor: pointer;
-    color: black;
+    
 }
 
 .home-page {
@@ -83,6 +83,6 @@ h1 {
 
 
 .link.active {
-  color: blue; 
-  font-weight: bold; 
+  color: #333333;
+  background-color: #FF6F61; 
 }
