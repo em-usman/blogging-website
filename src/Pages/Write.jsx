@@ -10,7 +10,6 @@ function Write() {
   const [story, setStory] = useState("");
   const navigate = useNavigate();
 
-
   const handleMouseEnter = () => setShowOptions(true);
   const handleMouseLeave = () => setShowOptions(false);
 
@@ -37,12 +36,12 @@ function Write() {
       story,
       media: selectedFile ? { type: fileType, src: selectedFile } : null,
     };
-      const savedPosts = JSON.parse(localStorage.getItem("posts")) || [];
-      const updatedPosts = [newPost, ...savedPosts];
-      localStorage.setItem("posts", JSON.stringify(updatedPosts));
+    const savedPosts = JSON.parse(localStorage.getItem("posts")) || [];
+    const updatedPosts = [newPost, ...savedPosts];
+    localStorage.setItem("posts", JSON.stringify(updatedPosts));
 
-      navigate("/", { state: { posts: updatedPosts } });
-    
+    navigate("/", { state: { posts: updatedPosts } });
+
     // Reset the form fields
     setTitle("");
     setStory("");
@@ -55,7 +54,7 @@ function Write() {
       <div className="main-container">
         <div>
           <input
-            className="input_title"
+            className="input_title input-field"
             type="text"
             placeholder="Enter Title"
             value={title}
@@ -64,7 +63,7 @@ function Write() {
         </div>
         <div>
           <textarea
-            className="input_story"
+            className="input_story input-field"
             placeholder="Tell Your Story..."
             value={story}
             onChange={(e) => setStory(e.target.value)}
