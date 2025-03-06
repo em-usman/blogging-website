@@ -96,13 +96,14 @@
   .menu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    gap: 0;
+    background-color: #FF9A9E;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     opacity: 0;
     transform: scale(0);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -115,7 +116,8 @@
   }
 
   .menu li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .menu .link {
