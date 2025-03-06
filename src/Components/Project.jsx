@@ -1,27 +1,37 @@
-import React from 'react';
-// import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import "./Project.css"
-
- 
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import "./Project.css";
 
 function Project() {
- 
- 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <div className="logo">
+      
         <h1 className="heading">Write Your Thoughts</h1>
-      </div>
+
+      <button className={isMenuOpen ? 'hamburger open' : 'hamburger'} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div className="container-menu">
-        <ul className="menu">
+        <ul className={isMenuOpen ? 'menu open' : 'menu'}>
           <li>
-            <NavLink to="/" end className="link" activeClassName="active">
+            <NavLink to="/" end className="link" activeClassName="active" onClick={closeMenu}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Write" className="link" activeClassName="active">
+            <NavLink to="/Write" className="link" activeClassName="active" onClick={closeMenu}>
               Write
             </NavLink>
           </li>

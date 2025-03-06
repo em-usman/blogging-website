@@ -1,7 +1,7 @@
 .home-page {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .post-container {
@@ -10,7 +10,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
-  margin-bottom: 20px;
+  margin: 70px 0 20px 0;
 }
 
 .posts-container {
@@ -23,22 +23,35 @@
 .post-title {
   font-size: 24px;
   margin-bottom: 10px;
+  margin-left: 13px;
   color: black;
-  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .post-story {
   font-size: 16px;
-  margin-bottom: 10px;
-  word-break: break-all;
+  margin-bottom: 0;
+  margin: 0 13px 0 13px;
+  word-wrap: break-word;
 }
-
 
 .post-content {
   width: 500px;
   height: auto;
-  padding: 5px;
-  margin-bottom: 20px;
+  /* padding: 5px; */
+  margin-bottom: 10px;
+}
+
+.post-media-img {
+  width: 170px;
+  height: 120px;
+  margin: auto 20px auto 0;
+}
+
+.post-media-video {
+  width: 170px;
+  height: 120px;
+  margin: auto 20px auto 20px;
 }
 
 .delete-button {
@@ -46,13 +59,50 @@
   border: none;
   border-radius: 5px;
   background-color: rgb(153, 153, 234);
-  transition: background-color  0.5s ease;
+  transition: background-color 0.5s ease;
   cursor: pointer;
   transition: color 0.5s ease;
-  margin-left: 25px;
+  margin: 0 0 10px 13px;
 }
 
 .delete-button:hover {
   background-color: navy;
   color: white;
+}
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 767px) {
+  .posts-container {
+    flex-direction: column;
+  }
+.post-container{
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+  .post-content {
+    width: 100%;
+  }
+
+  .post-title, .post-story {
+    margin: 20px 20px 0 20px;
+  }
+
+  .post-media {
+    width: 90%;
+  }
+
+  .post-media-img, .post-media-video {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0;
+
+
+  }
+
+  .delete-button {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
 }
