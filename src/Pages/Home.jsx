@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <div className="home-page">
-      <ul>
+      <ul style={{ padding: 0 }}>
         {posts.map((post) => (
           <li key={post.id} style={{ listStyleType: "none" }}>
             <div className="post-container">
@@ -34,14 +34,13 @@ function Home() {
                 <div className="post-media">
                   {post.media && post.media.type === "image" && (
                     <img
-                      style={{height: "100px", width: "150px" }}
                       className="post-media-img"
                       src={post.media.src}
                       alt="Selected"
                     />
                   )}
                   {post.media && post.media.type === "video" && (
-                    <video style={{height: "100px", width: "150px"}} className="post-media-video" controls>
+                    <video className="post-media-video" controls>
                       <source src={post.media.src} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
