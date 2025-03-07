@@ -45,13 +45,13 @@
 .post-media-img {
   width: 170px;
   height: 120px;
-  margin: auto 20px auto 0;
+  margin: 20px 20px auto 20px;
 }
 
 .post-media-video {
   width: 170px;
   height: 120px;
-  margin: auto 20px auto 20px;
+  margin: 20px 20px auto 20px;
 }
 
 .delete-button {
@@ -78,7 +78,9 @@
 .post-container{
   margin-top: 60px;
   margin-bottom: 0;
+  width: 347px;
 }
+
   .post-content {
     width: 100%;
   }
@@ -93,7 +95,7 @@
 
   .post-media-img, .post-media-video {
     width: 100% !important;
-    height: auto !important;
+    height: 50vh !important;
     margin: 0;
 
 
@@ -105,4 +107,15 @@
     margin-top: 10px;
     margin-bottom: 15px;
   }
+}
+
+@media (max-width: 355px) {
+  .post-container {
+    width: 290px;
+  }
+
+  .post-media-img, .post-media-video {
+    height: 50vh !important;
+  }
+  
 }
