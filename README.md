@@ -115,6 +115,13 @@ To run the project, execute the following command:
 ### Deployment
 
 You can deploy this project using:
+
+```sh
+  npm run build
+```
+
+After runnig tis commad you can deploy using this server.
+
 - Github Pages
 - Netlify
 - Vercel
@@ -136,7 +143,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Blog editing]**
 - [ ] **[Authentication]**
